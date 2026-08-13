@@ -1,0 +1,15 @@
+{
+  "requirements": [
+    {
+      "id": "REQ-001",
+      "statement": "An API Consumer can call a single public endpoint and receive a fixed greeting message with no authentication required",
+      "stories": [1],
+      "criteria": [
+        { "id": "AC-001-a", "must": "Calling the endpoint without any credentials returns a successful response", "method": "e2e" },
+        { "id": "AC-001-b", "must": "The response body contains a fixed greeting message", "method": "e2e" },
+        { "id": "AC-001-c", "must": "Calling the endpoint multiple times returns the same fixed greeting message each time", "method": "e2e" },
+        { "id": "AC-001-d", "must": "The endpoint does not require or accept a name or any other personalization input", "method": "e2e" }
+      ]
+    }
+  ]
+}
